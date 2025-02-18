@@ -1,4 +1,4 @@
-package com.shashankjaincompany.Section5_Locator;
+package com.shashankjaincompany.Section5_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
