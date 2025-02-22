@@ -3,6 +3,7 @@ package com.shashankjaincompany.Section7;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class OtherDropDownType
 {
@@ -21,6 +22,7 @@ public class OtherDropDownType
             driver.findElement(By.id("hrefIncChd")).click();
         }
         driver.findElement(By.id("btnclosepaxoption")).click();
-        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+      //System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"5 Adult, 4 Child");
     }
 }
